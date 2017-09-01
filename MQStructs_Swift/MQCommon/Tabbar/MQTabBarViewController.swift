@@ -23,13 +23,6 @@ class MQTabBarViewController: UITabBarController {
         //
         self.addViewControllers()
         
-        //
-        self.setDefaultSelectedController()
-        
-    }
-    
-    final func setDefaultSelectedController() {
-//        self.selectedViewController = self.viewControllers?[3]
     }
 
     fileprivate func addViewControllers() {
@@ -61,7 +54,7 @@ class MQTabBarViewController: UITabBarController {
         
         if item.showAsPresent {//present
             let mInfo = MQPresentVCInfo.init()
-            mInfo.className =  String.init(describing: controller.self)
+            mInfo.className =  controller.mq_className
             //controller.classForCoder
             mInfo.barItem = item
             MQPresentVCInfo.mqPresentVCsDic["\((self.viewControllers?.count)!)"] = mInfo
@@ -91,7 +84,7 @@ class MQTabBarViewController: UITabBarController {
         self.addChildViewController(controller)
     }
     
-    final public class func mq_tabBarController(_ tabBarController:UITabBarController,shouldSelectViewController viewController:UIViewController!) -> Bool {
+    final func mq_tabBarController(_ tabBarController:UITabBarController,shouldSelectViewController viewController:UIViewController!) -> Bool {
         var sIndex = -1
         if let viewcontrollers = tabBarController.viewControllers {
             for (index,value) in viewcontrollers.enumerated() {
@@ -114,7 +107,7 @@ class MQTabBarViewController: UITabBarController {
                 if let vcClass = vcClass {
                     let vc = vcClass.init()
                     if info.barItem.embedInNavigation,!vc.isKind(of: MQNavigationViewController.self) {
-                        tabBarController.present(UINavigationController.init(rootViewController: vc), animated: true, completion: nil)
+                        tabBarController.present(MQNavigationViewController.init(rootViewController: vc), animated: true, completion: nil)
                     }else{
                         tabBarController.present(vc, animated: true, completion: nil)
                     }
@@ -126,23 +119,14 @@ class MQTabBarViewController: UITabBarController {
     }
 
     
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    
 }
 
 extension MQTabBarViewController: UITabBarControllerDelegate {
     
-    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        print(tabBarController.selectedIndex,self.selectedIndex)
-        let item = MQTabbarCongig.barItems[tabBarController.selectedIndex]
-        if item.showAsPresent,item.embedInNavigation {
-//            tabBarController.present(MQNavigationViewController.init(rootViewController: viewController), animated: true, completion: nil)
-            
-            self.present(MQNavigationViewController.init(rootViewController: viewController), animated: true, completion: nil)
-        }
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        return self.mq_tabBarController(tabBarController,shouldSelectViewController:viewController)
     }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A98DC9C1F56B1DB00F20CB0 /* Bundle+MQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A98DC9B1F56B1DB00F20CB0 /* Bundle+MQ.swift */; };
+		7A98DC9F1F56B21000F20CB0 /* NSObject+MQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A98DC9E1F56B21000F20CB0 /* NSObject+MQ.swift */; };
 		7A9B24801F4E7B790022E199 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B247F1F4E7B790022E199 /* AppDelegate.swift */; };
 		7A9B24851F4E7B790022E199 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A9B24831F4E7B790022E199 /* Main.storyboard */; };
 		7A9B24871F4E7B790022E199 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A9B24861F4E7B790022E199 /* Assets.xcassets */; };
@@ -31,7 +33,6 @@
 		7A9B24EC1F4E9DA60022E199 /* MQTintColorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B24EB1F4E9DA60022E199 /* MQTintColorConfig.swift */; };
 		7A9B24F01F4E9EDD0022E199 /* MQTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B24EE1F4E9EDD0022E199 /* MQTabBarViewController.swift */; };
 		7A9B24F11F4E9EDD0022E199 /* MQTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A9B24EF1F4E9EDD0022E199 /* MQTabBarViewController.xib */; };
-		7A9B24F41F4EA2DF0022E199 /* Bundle+MQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B24F31F4EA2DF0022E199 /* Bundle+MQ.swift */; };
 		7A9B24F81F4EB8B20022E199 /* MQNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B24F61F4EB8B20022E199 /* MQNavigationViewController.swift */; };
 		7A9B24F91F4EB8B20022E199 /* MQNavigationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A9B24F71F4EB8B20022E199 /* MQNavigationViewController.xib */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A98DC9B1F56B1DB00F20CB0 /* Bundle+MQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+MQ.swift"; sourceTree = "<group>"; };
+		7A98DC9E1F56B21000F20CB0 /* NSObject+MQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+MQ.swift"; sourceTree = "<group>"; };
 		7A9B247C1F4E7B790022E199 /* MQStructs_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MQStructs_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A9B247F1F4E7B790022E199 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A9B24841F4E7B790022E199 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -84,7 +87,6 @@
 		7A9B24EB1F4E9DA60022E199 /* MQTintColorConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTintColorConfig.swift; sourceTree = "<group>"; };
 		7A9B24EE1F4E9EDD0022E199 /* MQTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTabBarViewController.swift; sourceTree = "<group>"; };
 		7A9B24EF1F4E9EDD0022E199 /* MQTabBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MQTabBarViewController.xib; sourceTree = "<group>"; };
-		7A9B24F31F4EA2DF0022E199 /* Bundle+MQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+MQ.swift"; sourceTree = "<group>"; };
 		7A9B24F61F4EB8B20022E199 /* MQNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQNavigationViewController.swift; sourceTree = "<group>"; };
 		7A9B24F71F4EB8B20022E199 /* MQNavigationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MQNavigationViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +116,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A98DC9A1F56B1DB00F20CB0 /* MQExtension */ = {
+			isa = PBXGroup;
+			children = (
+				7A98DC9B1F56B1DB00F20CB0 /* Bundle+MQ.swift */,
+			);
+			path = MQExtension;
+			sourceTree = "<group>";
+		};
+		7A98DC9D1F56B21000F20CB0 /* MQExtension */ = {
+			isa = PBXGroup;
+			children = (
+				7A98DC9E1F56B21000F20CB0 /* NSObject+MQ.swift */,
+			);
+			path = MQExtension;
+			sourceTree = "<group>";
+		};
 		7A9B24731F4E7B790022E199 = {
 			isa = PBXGroup;
 			children = (
@@ -388,6 +406,7 @@
 		7A9B24C71F4E7E5D0022E199 /* MQCommon */ = {
 			isa = PBXGroup;
 			children = (
+				7A98DC9D1F56B21000F20CB0 /* MQExtension */,
 				7A9B24F51F4EB8200022E199 /* Navigation */,
 				7A9B24ED1F4E9EB60022E199 /* Tabbar */,
 			);
@@ -414,8 +433,8 @@
 		7A9B24DE1F4E9AB20022E199 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				7A98DC9A1F56B1DB00F20CB0 /* MQExtension */,
 				7A9B24E41F4E9D4A0022E199 /* MQCore */,
-				7A9B24F21F4EA29D0022E199 /* MQExtension */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -446,14 +465,6 @@
 				7A9B24EF1F4E9EDD0022E199 /* MQTabBarViewController.xib */,
 			);
 			path = Tabbar;
-			sourceTree = "<group>";
-		};
-		7A9B24F21F4EA29D0022E199 /* MQExtension */ = {
-			isa = PBXGroup;
-			children = (
-				7A9B24F31F4EA2DF0022E199 /* Bundle+MQ.swift */,
-			);
-			path = MQExtension;
 			sourceTree = "<group>";
 		};
 		7A9B24F51F4EB8200022E199 /* Navigation */ = {
@@ -609,16 +620,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A9B24E61F4E9D650022E199 /* MQFontConfig.swift in Sources */,
+				7A98DC9C1F56B1DB00F20CB0 /* Bundle+MQ.swift in Sources */,
 				7A9B24DB1F4E7F510022E199 /* FiveViewController.swift in Sources */,
 				7A9B24F81F4EB8B20022E199 /* MQNavigationViewController.swift in Sources */,
 				7A9B24EA1F4E9D920022E199 /* MQTabbarCongig.swift in Sources */,
 				7A9B24CF1F4E7F210022E199 /* SecondViewController.swift in Sources */,
 				7A9B24F01F4E9EDD0022E199 /* MQTabBarViewController.swift in Sources */,
-				7A9B24F41F4EA2DF0022E199 /* Bundle+MQ.swift in Sources */,
 				7A9B24CB1F4E7F0F0022E199 /* FirstViewController.swift in Sources */,
 				7A9B24D71F4E7F430022E199 /* FourViewController.swift in Sources */,
 				7A9B24EC1F4E9DA60022E199 /* MQTintColorConfig.swift in Sources */,
 				7A9B24E81F4E9D7F0022E199 /* MQNavBarConfig.swift in Sources */,
+				7A98DC9F1F56B21000F20CB0 /* NSObject+MQ.swift in Sources */,
 				7A9B24801F4E7B790022E199 /* AppDelegate.swift in Sources */,
 				7A9B24D31F4E7F330022E199 /* ThreeViewController.swift in Sources */,
 			);
@@ -865,6 +877,7 @@
 				7A9B24A61F4E7B7A0022E199 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7A9B24A71F4E7B7A0022E199 /* Build configuration list for PBXNativeTarget "MQStructs_SwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -873,6 +886,7 @@
 				7A9B24A91F4E7B7A0022E199 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7A9B24AA1F4E7B7A0022E199 /* Build configuration list for PBXNativeTarget "MQStructs_SwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -881,6 +895,7 @@
 				7A9B24AC1F4E7B7A0022E199 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

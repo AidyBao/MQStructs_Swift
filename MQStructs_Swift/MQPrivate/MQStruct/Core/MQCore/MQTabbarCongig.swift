@@ -49,4 +49,73 @@ public class MQTabbarCongig: NSObject {
         }
         return arrItems
     }
+    
+    static func configBoolValue(forKey key:String, defaultValue: Bool) -> Bool {
+        if let boolValue = mqTarbarConfig().object(forKey: key) as? Bool {
+            return boolValue
+        }
+        return defaultValue
+    }
+    
+    static func configStringValue(forKey key: String!, defaultValue: String!) -> String! {
+        if let configStr = (mqTarbarConfig().object(forKey: key) as? String),configStr.characters.count > 0 {
+            return configStr
+        }
+        return defaultValue
+    }
+    
+    static func configFontSizeValue(forKey key:String,defaultSize:CGFloat) -> CGFloat {
+        if let dicF = mqTarbarConfig().object(forKey: key) as? NSDictionary {
+//            switch UIDevice.mq_DeviceSizeType() {
+//            case .s_4_0Inch:
+//                return dicF.object(forKey: "4_0") as! CGFloat
+//            case .s_4_7Inch:
+//                return dicF.object(forKey: "4_7") as! CGFloat
+//            case .s_5_5_Inch:
+//                return dicF.object(forKey: "5_5") as! CGFloat
+//            default:
+//                return dicF.object(forKey: "5_5") as! CGFloat
+//            }
+        }
+        return defaultSize
+    }
+
+    //MARK: - Bool Value
+    public class var showSeparatorLine: Bool {
+        return configBoolValue(forKey: "mq_showSeparatorLine", defaultValue: true)
+    }
+    
+    public class var isTranslucent: Bool {
+        return configBoolValue(forKey: "mq_isTranslucent", defaultValue: false)
+    }
+    
+    //MARK: - Font
+    public class var isCustomTitleFont: Bool {
+        return configBoolValue(forKey: "mq_customTitleFont", defaultValue: false)
+    }
+    
+    public class var customTitleFont: UIFont {
+        return UIFont(name: customTitleFontName, size: customTitleFontSize)!
+    }
+    
+    public class var customTitleFontSize: CGFloat {
+        return configFontSizeValue(forKey: "mq_customTitleFontSize", defaultSize: 11)
+    }
+    
+    public class var customTitleFontName: String {
+        return configStringValue(forKey: "mq_customTitleFontName", defaultValue: "Arial")
+    }
+    
+    //MARK: - Color Hex String
+    public class var backgroundColorStr: String {
+        return configStringValue(forKey: "mq_backgroundColor", defaultValue: "#ff0000")
+    }
+    
+    public class var titleNormalColorStr: String {
+        return configStringValue(forKey: "mq_titleNormalColor", defaultValue: "#ff0000")
+    }
+    
+    public class var titleSelectedColorStr: String {
+        return configStringValue(forKey: "mq_titleSelectedColor", defaultValue: "#ff0000")
+    }
 }

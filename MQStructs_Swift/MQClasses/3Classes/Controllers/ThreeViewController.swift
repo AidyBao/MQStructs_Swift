@@ -27,8 +27,13 @@ class ThreeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        self.dimiss()
+    }
+    
     func dimiss() {
-        
+        self.dismiss(animated: true, completion: nil)
     }
     
 

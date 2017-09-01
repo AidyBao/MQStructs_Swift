@@ -38,7 +38,6 @@ class MQNavigationViewController: UINavigationController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
 }
 
 extension MQNavigationViewController {
