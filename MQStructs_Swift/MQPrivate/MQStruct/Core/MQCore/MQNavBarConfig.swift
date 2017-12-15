@@ -21,7 +21,7 @@ class MQNavBarConfig: NSObject {
     }
     
     public static func configStringValue(forKey key: String!, defaultValue: String!) -> String! {
-        if let configStr = (mqNavBarConfig().object(forKey: key) as? String),configStr.characters.count > 0 {
+        if let configStr = (mqNavBarConfig().object(forKey: key) as? String),configStr.count > 0 {
             return configStr
         }
         return defaultValue
@@ -29,16 +29,16 @@ class MQNavBarConfig: NSObject {
     
     public static func configFontSizeValue(forKey key:String,defaultSize:CGFloat) -> CGFloat {
         if let dicF = mqNavBarConfig().object(forKey: key) as? NSDictionary {
-//            switch UIDevice.mq_DeviceSizeType() {
-//            case .s_4_0Inch:
-//                return dicF.object(forKey: "4_0") as! CGFloat
-//            case .s_4_7Inch:
-//                return dicF.object(forKey: "4_7") as! CGFloat
-//            case .s_5_5_Inch:
-//                return dicF.object(forKey: "5_5") as! CGFloat
-//            default:
-//                return dicF.object(forKey: "5_5") as! CGFloat
-//            }
+            switch UIDevice.mq_DeviceSizeType() {
+            case .s_4_0Inch:
+                return dicF.object(forKey: "4_0") as! CGFloat
+            case .s_4_7Inch:
+                return dicF.object(forKey: "4_7") as! CGFloat
+            case .s_5_5_Inch:
+                return dicF.object(forKey: "5_5") as! CGFloat
+            default:
+                return dicF.object(forKey: "5_5") as! CGFloat
+            }
         }
         return defaultSize
     }
@@ -93,6 +93,26 @@ class MQNavBarConfig: NSObject {
     public class func navTilteFont(_ size:CGFloat) -> UIFont! {
         return UIFont(name: navTitleFontName, size: size)
     }
+}
 
-
+extension MQNavBarConfig {
+    static func active(){
+        let navBarAppearance = UINavigationBar.appearance()
+        navBarAppearance.isTranslucent  = MQNavBarConfig.isTranslucent
+        navBarAppearance.barTintColor   = UIColor.mq_navBarColor
+        navBarAppearance.tintColor      = UIColor.mq_navBarButtonColor
+        
+        navBarAppearance.titleTextAttributes = {[NSAttributedStringKey.foregroundColor: UIColor.mq_navBarTitleColor,NSAttributedStringKey.font: MQNavBarConfig.navTilteFont(MQNavBarConfig.titleFontSize)]}()
+        
+        if !MQNavBarConfig.showSeparatorLine {
+            navBarAppearance.shadowImage = UIImage()
+            navBarAppearance.setBackgroundImage(UIImage(), for: .any, barMetrics: .default)
+        }
+        
+        if !MQNavBarConfig.userSystemBackButton {
+            let image = Bundle.mq_navBackImage()
+            navBarAppearance.backIndicatorImage = image
+            navBarAppearance.backIndicatorTransitionMaskImage = image
+        }
+    }
 }

@@ -1,5 +1,5 @@
 //
-//  MQTabbarCongig.swift
+//  MQTabbarConfig.swift
 //  MQStructs_Swift
 //
 //  Created by 120v on 2017/8/24.
@@ -29,7 +29,7 @@ public class MQTabbarItem:NSObject {
     }
 }
 
-public class MQTabbarCongig: NSObject {
+public class MQTabbarConfig: NSObject {
     
     public static var config: NSDictionary?
     public class func mqTarbarConfig() -> NSDictionary!{
@@ -40,16 +40,6 @@ public class MQTabbarCongig: NSObject {
         return cfg
     }
     
-    public class var barItems: [MQTabbarItem] {
-        var arrItems: [MQTabbarItem] = []
-        if let items = mqTarbarConfig().object(forKey: "mq_barItems") as? Array<Dictionary<String,Any>> {
-            for item in items {
-                arrItems.append(MQTabbarItem(item))
-            }
-        }
-        return arrItems
-    }
-    
     static func configBoolValue(forKey key:String, defaultValue: Bool) -> Bool {
         if let boolValue = mqTarbarConfig().object(forKey: key) as? Bool {
             return boolValue
@@ -58,7 +48,7 @@ public class MQTabbarCongig: NSObject {
     }
     
     static func configStringValue(forKey key: String!, defaultValue: String!) -> String! {
-        if let configStr = (mqTarbarConfig().object(forKey: key) as? String),configStr.characters.count > 0 {
+        if let configStr = (mqTarbarConfig().object(forKey: key) as? String),configStr.count > 0 {
             return configStr
         }
         return defaultValue
@@ -66,16 +56,16 @@ public class MQTabbarCongig: NSObject {
     
     static func configFontSizeValue(forKey key:String,defaultSize:CGFloat) -> CGFloat {
         if let dicF = mqTarbarConfig().object(forKey: key) as? NSDictionary {
-//            switch UIDevice.mq_DeviceSizeType() {
-//            case .s_4_0Inch:
-//                return dicF.object(forKey: "4_0") as! CGFloat
-//            case .s_4_7Inch:
-//                return dicF.object(forKey: "4_7") as! CGFloat
-//            case .s_5_5_Inch:
-//                return dicF.object(forKey: "5_5") as! CGFloat
-//            default:
-//                return dicF.object(forKey: "5_5") as! CGFloat
-//            }
+            switch UIDevice.mq_DeviceSizeType() {
+            case .s_4_0Inch:
+                return dicF.object(forKey: "4_0") as! CGFloat
+            case .s_4_7Inch:
+                return dicF.object(forKey: "4_7") as! CGFloat
+            case .s_5_5_Inch:
+                return dicF.object(forKey: "5_5") as! CGFloat
+            default:
+                return dicF.object(forKey: "5_5") as! CGFloat
+            }
         }
         return defaultSize
     }
@@ -117,5 +107,45 @@ public class MQTabbarCongig: NSObject {
     
     public class var titleSelectedColorStr: String {
         return configStringValue(forKey: "mq_titleSelectedColor", defaultValue: "#ff0000")
+    }
+    
+    fileprivate static var tabBarItems: [MQTabbarItem]?
+    class var barItems: [MQTabbarItem] {
+        if tabBarItems == nil {
+            tabBarItems = []
+            if let items = mqTarbarConfig().object(forKey: "mq_barItems") as? Array<Dictionary<String,Any>> {
+                for item in items {
+                    let mqItem = MQTabbarItem()
+                    mqItem.embedInNavigation = (item["embedInNavigation"] as? Bool) ?? true
+                    mqItem.showAsPresent = (item["showAsPresent"] as? Bool) ?? false
+                    mqItem.normalImage = (item["normalImage"] as? String) ?? ""
+                    mqItem.selectedImage = (item["selectedImage"] as? String) ?? ""
+                    mqItem.title = (item["title"] as? String) ?? ""
+                    tabBarItems?.append(mqItem)
+                }
+            }
+        }
+        return tabBarItems!
+    }
+}
+
+extension MQTabbarConfig {
+    static func active() {
+        let tabBarAppearance = UITabBar.appearance()
+        tabBarAppearance.isTranslucent = MQTabbarConfig.isTranslucent
+        tabBarAppearance.barTintColor = UIColor.mq_tabBarColor
+        if !MQTabbarConfig.showSeparatorLine {
+            tabBarAppearance.shadowImage = UIImage()
+            tabBarAppearance.backgroundImage = UIImage()
+        }
+
+        let tabBarItem = UITabBarItem.appearance()
+        if !MQTabbarConfig.isCustomTitleFont {
+            tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.mq_tabBarTitleNormalColor], for: .normal)
+            tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.mq_tabBarTitleSelectedColor], for: .selected)
+        }else{
+            tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.mq_tabBarTitleNormalColor,NSAttributedStringKey.font:MQTabbarConfig.customTitleFont], for: .normal)
+            tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.mq_tabBarTitleSelectedColor,NSAttributedStringKey.font:MQTabbarConfig.customTitleFont], for: .selected)
+        }
     }
 }

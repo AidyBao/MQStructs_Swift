@@ -32,7 +32,7 @@ class MQNavigationViewController: UINavigationController {
         self.navigationBar.barTintColor = UIColor.blue
         self.navigationBar.backgroundColor = UIColor.white
         self.navigationBar.tintColor = UIColor.white
-        self.navigationBar.titleTextAttributes = {[NSForegroundColorAttributeName: UIColor.white,NSFontAttributeName: UIFont.systemFont(ofSize: 18.0)]}()
+        self.navigationBar.titleTextAttributes = {[NSAttributedStringKey.foregroundColor: UIColor.white,NSAttributedStringKey.font: UIFont.systemFont(ofSize: 18.0)]}()
     }
 
     override func didReceiveMemoryWarning() {

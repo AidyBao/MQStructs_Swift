@@ -18,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
+        
+        MQStructs.loadUIConfig()
+        
         self.window?.rootViewController = MQTabBarViewController()
         self.window?.makeKeyAndVisible()
         return true

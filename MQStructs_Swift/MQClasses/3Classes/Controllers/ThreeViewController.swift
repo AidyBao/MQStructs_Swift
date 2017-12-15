@@ -32,7 +32,7 @@ class ThreeViewController: UIViewController {
         self.dimiss()
     }
     
-    func dimiss() {
+    @objc func dimiss() {
         self.dismiss(animated: true, completion: nil)
     }
     

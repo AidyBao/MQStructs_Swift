@@ -28,7 +28,7 @@ class FourViewController: UIViewController {
     }
 
     
-    func dimiss() {
+    @objc func dimiss() {
         self.dismiss(animated: true, completion: nil)
     }
 

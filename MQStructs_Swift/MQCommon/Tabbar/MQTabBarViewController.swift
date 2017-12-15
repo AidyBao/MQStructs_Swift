@@ -34,9 +34,9 @@ class MQTabBarViewController: UITabBarController {
     }
     
     final public func mq_addChildViewController(_ controller:UIViewController!,fromPlistItemIndex index:Int) {
-        let count = MQTabbarCongig.barItems.count
+        let count = MQTabbarConfig.barItems.count
         if count > 0 ,index < count{
-            self.mq_addChildrenViewController(controller, tabbarItem: MQTabbarCongig.barItems[index])
+            self.mq_addChildrenViewController(controller, tabbarItem: MQTabbarConfig.barItems[index])
         }
     }
     
