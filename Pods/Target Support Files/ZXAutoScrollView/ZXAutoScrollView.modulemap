@@ -1,0 +1,6 @@
+framework module ZXAutoScrollView {
+  umbrella header "ZXAutoScrollView-umbrella.h"
+
+  export *
+  module * { export * }
+}

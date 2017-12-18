@@ -21,11 +21,20 @@ class MQTabBarViewController: UITabBarController {
         
         self.delegate = self
         //
-        self.addViewControllers()
+        self.setTabbarUI()
         
+        //
+        self.addViewControllers()
+    }
+    
+    private func setTabbarUI() {
+        self.tabBar.layer.shadowColor = UIColor.mq_colorWithHexString("4f8ee5").cgColor
+        self.tabBar.layer.shadowRadius = 3
+        self.tabBar.layer.shadowOffset = CGSize(width: 0, height: -2)
+        self.tabBar.layer.shadowOpacity = 0.3
     }
 
-    fileprivate func addViewControllers() {
+    func addViewControllers() {
         self.mq_addChildViewController(FirstViewController(), fromPlistItemIndex: 0)
         self.mq_addChildViewController(SecondViewController(), fromPlistItemIndex: 1)
         self.mq_addChildViewController(ThreeViewController(), fromPlistItemIndex: 2)

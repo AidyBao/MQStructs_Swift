@@ -7,6 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6873DEEB9B9FE093A074C12D /* Pods_MQStructs_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A775E2F36480936DC73E2037 /* Pods_MQStructs_Swift.framework */; };
+		7A5C05F81FE7653D009ED4A5 /* MQNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C05F71FE7653D009ED4A5 /* MQNetwork.swift */; };
+		7A5C06011FE76545009ED4A5 /* HImagePickerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C05FA1FE76544009ED4A5 /* HImagePickerUtils.swift */; };
+		7A5C06021FE76545009ED4A5 /* MQAlertUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C05FB1FE76544009ED4A5 /* MQAlertUtils.swift */; };
+		7A5C06031FE76545009ED4A5 /* MQAudioUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C05FC1FE76544009ED4A5 /* MQAudioUtils.swift */; };
+		7A5C06041FE76545009ED4A5 /* MQCommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C05FD1FE76544009ED4A5 /* MQCommonUtils.swift */; };
+		7A5C06051FE76545009ED4A5 /* MQDateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C05FE1FE76544009ED4A5 /* MQDateUtils.swift */; };
+		7A5C06061FE76545009ED4A5 /* MQLocationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C05FF1FE76544009ED4A5 /* MQLocationUtils.swift */; };
+		7A5C06071FE76545009ED4A5 /* MQUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C06001FE76544009ED4A5 /* MQUtils.swift */; };
+		7A5C060D1FE7654E009ED4A5 /* MQAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C06091FE7654E009ED4A5 /* MQAPI.swift */; };
+		7A5C060E1FE7654E009ED4A5 /* MQAPIDataparse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C060A1FE7654E009ED4A5 /* MQAPIDataparse.swift */; };
+		7A5C060F1FE7654E009ED4A5 /* MQAPISign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C060B1FE7654E009ED4A5 /* MQAPISign.swift */; };
+		7A5C06101FE7654E009ED4A5 /* MQBase64Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C060C1FE7654E009ED4A5 /* MQBase64Utils.swift */; };
+		7A5C06141FE7685B009ED4A5 /* MQUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C06131FE7685B009ED4A5 /* MQUserModel.swift */; };
+		7A5C06171FE785FB009ED4A5 /* MQConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C06161FE785FA009ED4A5 /* MQConst.swift */; };
+		7A5C061B1FE78BD7009ED4A5 /* UIViewController+MQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C06181FE78BD6009ED4A5 /* UIViewController+MQ.swift */; };
+		7A5C061C1FE78BD7009ED4A5 /* UIViewController+MQNavControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C06191FE78BD6009ED4A5 /* UIViewController+MQNavControl.swift */; };
+		7A5C061F1FE78D74009ED4A5 /* MQNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C061E1FE78D74009ED4A5 /* MQNotification.swift */; };
+		7A5C06211FE79096009ED4A5 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5C06201FE79096009ED4A5 /* libstdc++.6.0.9.tbd */; };
+		7A5C06231FE79AB6009ED4A5 /* AppDelegate+Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C06221FE79AB6009ED4A5 /* AppDelegate+Login.swift */; };
+		7A5C06261FE79CF5009ED4A5 /* AppDelegate+Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C06241FE79CF4009ED4A5 /* AppDelegate+Notice.swift */; };
+		7A5C06271FE79CF5009ED4A5 /* AppDelegate+BMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C06251FE79CF4009ED4A5 /* AppDelegate+BMap.swift */; };
+		7A5C06361FE7A276009ED4A5 /* libUMessage_Sdk_1.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5C06321FE7A276009ED4A5 /* libUMessage_Sdk_1.4.0.a */; };
+		7A5C06371FE7A276009ED4A5 /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5C06351FE7A276009ED4A5 /* UMMobClick.framework */; };
+		7A5C06401FE7A3D1009ED4A5 /* BaiduMapAPI_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5C06391FE7A3D1009ED4A5 /* BaiduMapAPI_Base.framework */; };
+		7A5C06411FE7A3D1009ED4A5 /* BaiduMapAPI_Location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5C063A1FE7A3D1009ED4A5 /* BaiduMapAPI_Location.framework */; };
+		7A5C06421FE7A3D1009ED4A5 /* BaiduMapAPI_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5C063B1FE7A3D1009ED4A5 /* BaiduMapAPI_Map.framework */; };
+		7A5C06431FE7A3D1009ED4A5 /* BaiduMapAPI_Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5C063C1FE7A3D1009ED4A5 /* BaiduMapAPI_Utils.framework */; };
+		7A5C06441FE7A3D1009ED4A5 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5C063E1FE7A3D1009ED4A5 /* libcrypto.a */; };
+		7A5C06451FE7A3D1009ED4A5 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5C063F1FE7A3D1009ED4A5 /* libssl.a */; };
+		7A5C06481FE7A952009ED4A5 /* MQRootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C06461FE7A951009ED4A5 /* MQRootController.swift */; };
+		7A5C06491FE7A952009ED4A5 /* MQRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C06471FE7A952009ED4A5 /* MQRouter.swift */; };
+		7A5C064B1FE7AFF6009ED4A5 /* MQDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C064A1FE7AFF6009ED4A5 /* MQDevice.swift */; };
+		7A5C064D1FE7B1F0009ED4A5 /* UITabbarController+MQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C064C1FE7B1EF009ED4A5 /* UITabbarController+MQ.swift */; };
+		7A5C064F1FE7B4D6009ED4A5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5C064E1FE7B4D6009ED4A5 /* CoreLocation.framework */; };
+		7A5C06511FE7B4E7009ED4A5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5C06501FE7B4E7009ED4A5 /* QuartzCore.framework */; };
+		7A5C06531FE7B4F3009ED4A5 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5C06521FE7B4F3009ED4A5 /* OpenGLES.framework */; };
+		7A5C06551FE7B4FB009ED4A5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5C06541FE7B4FB009ED4A5 /* SystemConfiguration.framework */; };
+		7A5C06571FE7B505009ED4A5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5C06561FE7B505009ED4A5 /* Security.framework */; };
+		7A5C06591FE7B510009ED4A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5C06581FE7B50F009ED4A5 /* CoreGraphics.framework */; };
+		7A5C065B1FE7B529009ED4A5 /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5C065A1FE7B529009ED4A5 /* libc++.1.tbd */; };
+		7A5C065D1FE7B537009ED4A5 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5C065C1FE7B537009ED4A5 /* libc++.tbd */; };
+		7A5C065F1FE7B54B009ED4A5 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5C065E1FE7B54B009ED4A5 /* libsqlite3.0.tbd */; };
+		7A5C06611FE7B55A009ED4A5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5C06601FE7B55A009ED4A5 /* CoreTelephony.framework */; };
 		7A98DC9C1F56B1DB00F20CB0 /* Bundle+MQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A98DC9B1F56B1DB00F20CB0 /* Bundle+MQ.swift */; };
 		7A98DC9F1F56B21000F20CB0 /* NSObject+MQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A98DC9E1F56B21000F20CB0 /* NSObject+MQ.swift */; };
 		7A9B24801F4E7B790022E199 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B247F1F4E7B790022E199 /* AppDelegate.swift */; };
@@ -31,8 +75,6 @@
 		7A9B24E81F4E9D7F0022E199 /* MQNavBarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B24E71F4E9D7F0022E199 /* MQNavBarConfig.swift */; };
 		7A9B24EA1F4E9D920022E199 /* MQTabbarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B24E91F4E9D920022E199 /* MQTabbarConfig.swift */; };
 		7A9B24EC1F4E9DA60022E199 /* MQTintColorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B24EB1F4E9DA60022E199 /* MQTintColorConfig.swift */; };
-		7A9B24F01F4E9EDD0022E199 /* MQTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B24EE1F4E9EDD0022E199 /* MQTabBarViewController.swift */; };
-		7A9B24F11F4E9EDD0022E199 /* MQTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A9B24EF1F4E9EDD0022E199 /* MQTabBarViewController.xib */; };
 		7A9B24F81F4EB8B20022E199 /* MQNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B24F61F4EB8B20022E199 /* MQNavigationViewController.swift */; };
 		7A9B24F91F4EB8B20022E199 /* MQNavigationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A9B24F71F4EB8B20022E199 /* MQNavigationViewController.xib */; };
 		7AB85FF81FE3B39A0071B354 /* MQStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB85FF71FE3B39A0071B354 /* MQStructs.swift */; };
@@ -61,6 +103,52 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		278BC341C6DC2E131339EDF4 /* Pods-MQStructs_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MQStructs_Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MQStructs_Swift/Pods-MQStructs_Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		7A5C05F71FE7653D009ED4A5 /* MQNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQNetwork.swift; sourceTree = "<group>"; };
+		7A5C05FA1FE76544009ED4A5 /* HImagePickerUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HImagePickerUtils.swift; sourceTree = "<group>"; };
+		7A5C05FB1FE76544009ED4A5 /* MQAlertUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQAlertUtils.swift; sourceTree = "<group>"; };
+		7A5C05FC1FE76544009ED4A5 /* MQAudioUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQAudioUtils.swift; sourceTree = "<group>"; };
+		7A5C05FD1FE76544009ED4A5 /* MQCommonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQCommonUtils.swift; sourceTree = "<group>"; };
+		7A5C05FE1FE76544009ED4A5 /* MQDateUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQDateUtils.swift; sourceTree = "<group>"; };
+		7A5C05FF1FE76544009ED4A5 /* MQLocationUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQLocationUtils.swift; sourceTree = "<group>"; };
+		7A5C06001FE76544009ED4A5 /* MQUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQUtils.swift; sourceTree = "<group>"; };
+		7A5C06091FE7654E009ED4A5 /* MQAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQAPI.swift; sourceTree = "<group>"; };
+		7A5C060A1FE7654E009ED4A5 /* MQAPIDataparse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQAPIDataparse.swift; sourceTree = "<group>"; };
+		7A5C060B1FE7654E009ED4A5 /* MQAPISign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQAPISign.swift; sourceTree = "<group>"; };
+		7A5C060C1FE7654E009ED4A5 /* MQBase64Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQBase64Utils.swift; sourceTree = "<group>"; };
+		7A5C06131FE7685B009ED4A5 /* MQUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQUserModel.swift; sourceTree = "<group>"; };
+		7A5C06151FE76DE9009ED4A5 /* MQStructs-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MQStructs-Bridging-Header.h"; sourceTree = "<group>"; };
+		7A5C06161FE785FA009ED4A5 /* MQConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQConst.swift; sourceTree = "<group>"; };
+		7A5C06181FE78BD6009ED4A5 /* UIViewController+MQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+MQ.swift"; sourceTree = "<group>"; };
+		7A5C06191FE78BD6009ED4A5 /* UIViewController+MQNavControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+MQNavControl.swift"; sourceTree = "<group>"; };
+		7A5C061E1FE78D74009ED4A5 /* MQNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQNotification.swift; sourceTree = "<group>"; };
+		7A5C06201FE79096009ED4A5 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		7A5C06221FE79AB6009ED4A5 /* AppDelegate+Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Login.swift"; sourceTree = "<group>"; };
+		7A5C06241FE79CF4009ED4A5 /* AppDelegate+Notice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Notice.swift"; sourceTree = "<group>"; };
+		7A5C06251FE79CF4009ED4A5 /* AppDelegate+BMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+BMap.swift"; sourceTree = "<group>"; };
+		7A5C06321FE7A276009ED4A5 /* libUMessage_Sdk_1.4.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMessage_Sdk_1.4.0.a; sourceTree = "<group>"; };
+		7A5C06331FE7A276009ED4A5 /* UMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMessage.h; sourceTree = "<group>"; };
+		7A5C06351FE7A276009ED4A5 /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
+		7A5C06391FE7A3D1009ED4A5 /* BaiduMapAPI_Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Base.framework; sourceTree = "<group>"; };
+		7A5C063A1FE7A3D1009ED4A5 /* BaiduMapAPI_Location.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Location.framework; sourceTree = "<group>"; };
+		7A5C063B1FE7A3D1009ED4A5 /* BaiduMapAPI_Map.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Map.framework; sourceTree = "<group>"; };
+		7A5C063C1FE7A3D1009ED4A5 /* BaiduMapAPI_Utils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Utils.framework; sourceTree = "<group>"; };
+		7A5C063E1FE7A3D1009ED4A5 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		7A5C063F1FE7A3D1009ED4A5 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		7A5C06461FE7A951009ED4A5 /* MQRootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQRootController.swift; sourceTree = "<group>"; };
+		7A5C06471FE7A952009ED4A5 /* MQRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQRouter.swift; sourceTree = "<group>"; };
+		7A5C064A1FE7AFF6009ED4A5 /* MQDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQDevice.swift; sourceTree = "<group>"; };
+		7A5C064C1FE7B1EF009ED4A5 /* UITabbarController+MQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabbarController+MQ.swift"; sourceTree = "<group>"; };
+		7A5C064E1FE7B4D6009ED4A5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7A5C06501FE7B4E7009ED4A5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7A5C06521FE7B4F3009ED4A5 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		7A5C06541FE7B4FB009ED4A5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7A5C06561FE7B505009ED4A5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7A5C06581FE7B50F009ED4A5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7A5C065A1FE7B529009ED4A5 /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		7A5C065C1FE7B537009ED4A5 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		7A5C065E1FE7B54B009ED4A5 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		7A5C06601FE7B55A009ED4A5 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		7A98DC9B1F56B1DB00F20CB0 /* Bundle+MQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+MQ.swift"; sourceTree = "<group>"; };
 		7A98DC9E1F56B21000F20CB0 /* NSObject+MQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+MQ.swift"; sourceTree = "<group>"; };
 		7A9B247C1F4E7B790022E199 /* MQStructs_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MQStructs_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,8 +179,6 @@
 		7A9B24E71F4E9D7F0022E199 /* MQNavBarConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQNavBarConfig.swift; sourceTree = "<group>"; };
 		7A9B24E91F4E9D920022E199 /* MQTabbarConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTabbarConfig.swift; sourceTree = "<group>"; };
 		7A9B24EB1F4E9DA60022E199 /* MQTintColorConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTintColorConfig.swift; sourceTree = "<group>"; };
-		7A9B24EE1F4E9EDD0022E199 /* MQTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTabBarViewController.swift; sourceTree = "<group>"; };
-		7A9B24EF1F4E9EDD0022E199 /* MQTabBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MQTabBarViewController.xib; sourceTree = "<group>"; };
 		7A9B24F61F4EB8B20022E199 /* MQNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQNavigationViewController.swift; sourceTree = "<group>"; };
 		7A9B24F71F4EB8B20022E199 /* MQNavigationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MQNavigationViewController.xib; sourceTree = "<group>"; };
 		7AB85FF71FE3B39A0071B354 /* MQStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQStructs.swift; sourceTree = "<group>"; };
@@ -101,6 +187,8 @@
 		7AB85FFD1FE3B7F60071B354 /* NSAttributedString+MQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+MQ.swift"; sourceTree = "<group>"; };
 		7AB85FFF1FE3B8670071B354 /* UIFont+MQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+MQ.swift"; sourceTree = "<group>"; };
 		7AB860011FE3C13C0071B354 /* UIDevice+MQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+MQ.swift"; sourceTree = "<group>"; };
+		A775E2F36480936DC73E2037 /* Pods_MQStructs_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MQStructs_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCE01DF2B72B36B5DCEBBA3C /* Pods-MQStructs_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MQStructs_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-MQStructs_Swift/Pods-MQStructs_Swift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +196,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A5C06611FE7B55A009ED4A5 /* CoreTelephony.framework in Frameworks */,
+				7A5C065F1FE7B54B009ED4A5 /* libsqlite3.0.tbd in Frameworks */,
+				7A5C065D1FE7B537009ED4A5 /* libc++.tbd in Frameworks */,
+				7A5C065B1FE7B529009ED4A5 /* libc++.1.tbd in Frameworks */,
+				7A5C06591FE7B510009ED4A5 /* CoreGraphics.framework in Frameworks */,
+				7A5C06571FE7B505009ED4A5 /* Security.framework in Frameworks */,
+				7A5C06551FE7B4FB009ED4A5 /* SystemConfiguration.framework in Frameworks */,
+				7A5C06531FE7B4F3009ED4A5 /* OpenGLES.framework in Frameworks */,
+				7A5C06511FE7B4E7009ED4A5 /* QuartzCore.framework in Frameworks */,
+				7A5C064F1FE7B4D6009ED4A5 /* CoreLocation.framework in Frameworks */,
+				7A5C06451FE7A3D1009ED4A5 /* libssl.a in Frameworks */,
+				7A5C06401FE7A3D1009ED4A5 /* BaiduMapAPI_Base.framework in Frameworks */,
+				7A5C06421FE7A3D1009ED4A5 /* BaiduMapAPI_Map.framework in Frameworks */,
+				7A5C06411FE7A3D1009ED4A5 /* BaiduMapAPI_Location.framework in Frameworks */,
+				7A5C06361FE7A276009ED4A5 /* libUMessage_Sdk_1.4.0.a in Frameworks */,
+				7A5C06431FE7A3D1009ED4A5 /* BaiduMapAPI_Utils.framework in Frameworks */,
+				7A5C06211FE79096009ED4A5 /* libstdc++.6.0.9.tbd in Frameworks */,
+				7A5C06371FE7A276009ED4A5 /* UMMobClick.framework in Frameworks */,
+				6873DEEB9B9FE093A074C12D /* Pods_MQStructs_Swift.framework in Frameworks */,
+				7A5C06441FE7A3D1009ED4A5 /* libcrypto.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,15 +236,136 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		659559858D21DCCDD691B9FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A5C06601FE7B55A009ED4A5 /* CoreTelephony.framework */,
+				7A5C065E1FE7B54B009ED4A5 /* libsqlite3.0.tbd */,
+				7A5C065C1FE7B537009ED4A5 /* libc++.tbd */,
+				7A5C065A1FE7B529009ED4A5 /* libc++.1.tbd */,
+				7A5C06581FE7B50F009ED4A5 /* CoreGraphics.framework */,
+				7A5C06561FE7B505009ED4A5 /* Security.framework */,
+				7A5C06541FE7B4FB009ED4A5 /* SystemConfiguration.framework */,
+				7A5C06521FE7B4F3009ED4A5 /* OpenGLES.framework */,
+				7A5C06501FE7B4E7009ED4A5 /* QuartzCore.framework */,
+				7A5C064E1FE7B4D6009ED4A5 /* CoreLocation.framework */,
+				7A5C06201FE79096009ED4A5 /* libstdc++.6.0.9.tbd */,
+				A775E2F36480936DC73E2037 /* Pods_MQStructs_Swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A5C05F61FE7653D009ED4A5 /* MQNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				7A5C05F71FE7653D009ED4A5 /* MQNetwork.swift */,
+			);
+			name = MQNetwork;
+			path = MQStructs_Swift/MQPrivate/MQStruct/MQNetwork;
+			sourceTree = SOURCE_ROOT;
+		};
+		7A5C05F91FE76544009ED4A5 /* MQUtilityTools */ = {
+			isa = PBXGroup;
+			children = (
+				7A5C05FA1FE76544009ED4A5 /* HImagePickerUtils.swift */,
+				7A5C05FB1FE76544009ED4A5 /* MQAlertUtils.swift */,
+				7A5C05FC1FE76544009ED4A5 /* MQAudioUtils.swift */,
+				7A5C05FD1FE76544009ED4A5 /* MQCommonUtils.swift */,
+				7A5C05FE1FE76544009ED4A5 /* MQDateUtils.swift */,
+				7A5C05FF1FE76544009ED4A5 /* MQLocationUtils.swift */,
+				7A5C06001FE76544009ED4A5 /* MQUtils.swift */,
+			);
+			name = MQUtilityTools;
+			path = MQStructs_Swift/MQPrivate/MQStruct/MQUtilityTools;
+			sourceTree = SOURCE_ROOT;
+		};
+		7A5C06081FE7654E009ED4A5 /* MQNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				7A5C06091FE7654E009ED4A5 /* MQAPI.swift */,
+				7A5C060A1FE7654E009ED4A5 /* MQAPIDataparse.swift */,
+				7A5C060B1FE7654E009ED4A5 /* MQAPISign.swift */,
+				7A5C060C1FE7654E009ED4A5 /* MQBase64Utils.swift */,
+			);
+			path = MQNetwork;
+			sourceTree = "<group>";
+		};
+		7A5C06111FE7685B009ED4A5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7A5C06121FE7685B009ED4A5 /* Model */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7A5C06121FE7685B009ED4A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7A5C06131FE7685B009ED4A5 /* MQUserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7A5C06301FE7A276009ED4A5 /* UM */ = {
+			isa = PBXGroup;
+			children = (
+				7A5C06311FE7A276009ED4A5 /* UMessage_Sdk_1.4.0 */,
+				7A5C06341FE7A276009ED4A5 /* UMMobClick-NO-IDFA */,
+			);
+			path = UM;
+			sourceTree = "<group>";
+		};
+		7A5C06311FE7A276009ED4A5 /* UMessage_Sdk_1.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				7A5C06321FE7A276009ED4A5 /* libUMessage_Sdk_1.4.0.a */,
+				7A5C06331FE7A276009ED4A5 /* UMessage.h */,
+			);
+			path = UMessage_Sdk_1.4.0;
+			sourceTree = "<group>";
+		};
+		7A5C06341FE7A276009ED4A5 /* UMMobClick-NO-IDFA */ = {
+			isa = PBXGroup;
+			children = (
+				7A5C06351FE7A276009ED4A5 /* UMMobClick.framework */,
+			);
+			path = "UMMobClick-NO-IDFA";
+			sourceTree = "<group>";
+		};
+		7A5C06381FE7A3D1009ED4A5 /* BaiduMap */ = {
+			isa = PBXGroup;
+			children = (
+				7A5C06391FE7A3D1009ED4A5 /* BaiduMapAPI_Base.framework */,
+				7A5C063A1FE7A3D1009ED4A5 /* BaiduMapAPI_Location.framework */,
+				7A5C063B1FE7A3D1009ED4A5 /* BaiduMapAPI_Map.framework */,
+				7A5C063C1FE7A3D1009ED4A5 /* BaiduMapAPI_Utils.framework */,
+				7A5C063D1FE7A3D1009ED4A5 /* thirdlibs */,
+			);
+			path = BaiduMap;
+			sourceTree = "<group>";
+		};
+		7A5C063D1FE7A3D1009ED4A5 /* thirdlibs */ = {
+			isa = PBXGroup;
+			children = (
+				7A5C063E1FE7A3D1009ED4A5 /* libcrypto.a */,
+				7A5C063F1FE7A3D1009ED4A5 /* libssl.a */,
+			);
+			path = thirdlibs;
+			sourceTree = "<group>";
+		};
 		7A98DC9A1F56B1DB00F20CB0 /* MQExtension */ = {
 			isa = PBXGroup;
 			children = (
+				7A5C064A1FE7AFF6009ED4A5 /* MQDevice.swift */,
 				7A98DC9B1F56B1DB00F20CB0 /* Bundle+MQ.swift */,
 				7AB85FF91FE3B4D10071B354 /* UIColor+MQ.swift */,
 				7AB85FFB1FE3B6C60071B354 /* String+MQ.swift */,
 				7AB85FFD1FE3B7F60071B354 /* NSAttributedString+MQ.swift */,
 				7AB85FFF1FE3B8670071B354 /* UIFont+MQ.swift */,
 				7AB860011FE3C13C0071B354 /* UIDevice+MQ.swift */,
+				7A5C06181FE78BD6009ED4A5 /* UIViewController+MQ.swift */,
+				7A5C06191FE78BD6009ED4A5 /* UIViewController+MQNavControl.swift */,
+				7A5C064C1FE7B1EF009ED4A5 /* UITabbarController+MQ.swift */,
 			);
 			path = MQExtension;
 			sourceTree = "<group>";
@@ -156,6 +385,8 @@
 				7A9B24931F4E7B7A0022E199 /* MQStructs_SwiftTests */,
 				7A9B249E1F4E7B7A0022E199 /* MQStructs_SwiftUITests */,
 				7A9B247D1F4E7B790022E199 /* Products */,
+				923931F59457F9E11BA75DB0 /* Pods */,
+				659559858D21DCCDD691B9FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,6 +404,9 @@
 			isa = PBXGroup;
 			children = (
 				7A9B247F1F4E7B790022E199 /* AppDelegate.swift */,
+				7A5C06221FE79AB6009ED4A5 /* AppDelegate+Login.swift */,
+				7A5C06251FE79CF4009ED4A5 /* AppDelegate+BMap.swift */,
+				7A5C06241FE79CF4009ED4A5 /* AppDelegate+Notice.swift */,
 				7A9B24AD1F4E7E5C0022E199 /* MQClasses */,
 				7A9B24C71F4E7E5D0022E199 /* MQCommon */,
 				7A9B24C81F4E7E5D0022E199 /* MQPrivate */,
@@ -181,6 +415,7 @@
 				7A9B24861F4E7B790022E199 /* Assets.xcassets */,
 				7A9B24881F4E7B790022E199 /* LaunchScreen.storyboard */,
 				7A9B248B1F4E7B790022E199 /* Info.plist */,
+				7A5C06151FE76DE9009ED4A5 /* MQStructs-Bridging-Header.h */,
 			);
 			path = MQStructs_Swift;
 			sourceTree = "<group>";
@@ -206,6 +441,7 @@
 		7A9B24AD1F4E7E5C0022E199 /* MQClasses */ = {
 			isa = PBXGroup;
 			children = (
+				7A5C06111FE7685B009ED4A5 /* Login */,
 				7A9B24AE1F4E7E5C0022E199 /* 1Classes */,
 				7A9B24B31F4E7E5C0022E199 /* 2Classes */,
 				7A9B24B81F4E7E5C0022E199 /* 3Classes */,
@@ -423,6 +659,12 @@
 		7A9B24C71F4E7E5D0022E199 /* MQCommon */ = {
 			isa = PBXGroup;
 			children = (
+				7A5C06461FE7A951009ED4A5 /* MQRootController.swift */,
+				7A5C06471FE7A952009ED4A5 /* MQRouter.swift */,
+				7A5C061E1FE78D74009ED4A5 /* MQNotification.swift */,
+				7A5C06161FE785FA009ED4A5 /* MQConst.swift */,
+				7A5C06381FE7A3D1009ED4A5 /* BaiduMap */,
+				7A5C06301FE7A276009ED4A5 /* UM */,
 				7A98DC9D1F56B21000F20CB0 /* MQExtension */,
 				7A9B24F51F4EB8200022E199 /* Navigation */,
 				7A9B24ED1F4E9EB60022E199 /* Tabbar */,
@@ -433,6 +675,7 @@
 		7A9B24C81F4E7E5D0022E199 /* MQPrivate */ = {
 			isa = PBXGroup;
 			children = (
+				7A5C06081FE7654E009ED4A5 /* MQNetwork */,
 				7A9B24DD1F4E9AB20022E199 /* MQStruct */,
 			);
 			path = MQPrivate;
@@ -451,6 +694,8 @@
 		7A9B24DE1F4E9AB20022E199 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				7A5C05F91FE76544009ED4A5 /* MQUtilityTools */,
+				7A5C05F61FE7653D009ED4A5 /* MQNetwork */,
 				7A98DC9A1F56B1DB00F20CB0 /* MQExtension */,
 				7A9B24E41F4E9D4A0022E199 /* MQCore */,
 			);
@@ -479,8 +724,6 @@
 		7A9B24ED1F4E9EB60022E199 /* Tabbar */ = {
 			isa = PBXGroup;
 			children = (
-				7A9B24EE1F4E9EDD0022E199 /* MQTabBarViewController.swift */,
-				7A9B24EF1F4E9EDD0022E199 /* MQTabBarViewController.xib */,
 			);
 			path = Tabbar;
 			sourceTree = "<group>";
@@ -494,6 +737,15 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		923931F59457F9E11BA75DB0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				278BC341C6DC2E131339EDF4 /* Pods-MQStructs_Swift.debug.xcconfig */,
+				CCE01DF2B72B36B5DCEBBA3C /* Pods-MQStructs_Swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -501,9 +753,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A9B24A41F4E7B7A0022E199 /* Build configuration list for PBXNativeTarget "MQStructs_Swift" */;
 			buildPhases = (
+				BC2BE9D3A1C3B1261083FD50 /* [CP] Check Pods Manifest.lock */,
 				7A9B24781F4E7B790022E199 /* Sources */,
 				7A9B24791F4E7B790022E199 /* Frameworks */,
 				7A9B247A1F4E7B790022E199 /* Resources */,
+				91680A150BDDB735096C90CA /* [CP] Embed Pods Frameworks */,
+				45D2C76BB29A30A5CBA77C64 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -610,7 +865,6 @@
 				7A9B24E31F4E9C500022E199 /* Tabbar.xcassets in Resources */,
 				7A9B24E01F4E9AF30022E199 /* MQCore.bundle in Resources */,
 				7A9B24CC1F4E7F0F0022E199 /* FirstViewController.xib in Resources */,
-				7A9B24F11F4E9EDD0022E199 /* MQTabBarViewController.xib in Resources */,
 				7A9B24D01F4E7F210022E199 /* SecondViewController.xib in Resources */,
 				7A9B24D41F4E7F330022E199 /* ThreeViewController.xib in Resources */,
 			);
@@ -632,6 +886,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		45D2C76BB29A30A5CBA77C64 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MQStructs_Swift/Pods-MQStructs_Swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91680A150BDDB735096C90CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MQStructs_Swift/Pods-MQStructs_Swift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AnimatedCollectionViewLayout/AnimatedCollectionViewLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/JXPhotoBrowser/JXPhotoBrowser.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/ZXAutoScrollView/ZXAutoScrollView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AnimatedCollectionViewLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXPhotoBrowser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZXAutoScrollView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MQStructs_Swift/Pods-MQStructs_Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC2BE9D3A1C3B1261083FD50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MQStructs_Swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7A9B24781F4E7B790022E199 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -639,24 +963,47 @@
 			files = (
 				7A9B24E61F4E9D650022E199 /* MQFontConfig.swift in Sources */,
 				7AB85FFE1FE3B7F70071B354 /* NSAttributedString+MQ.swift in Sources */,
+				7A5C064B1FE7AFF6009ED4A5 /* MQDevice.swift in Sources */,
+				7A5C06231FE79AB6009ED4A5 /* AppDelegate+Login.swift in Sources */,
+				7A5C06101FE7654E009ED4A5 /* MQBase64Utils.swift in Sources */,
 				7AB85FFA1FE3B4D20071B354 /* UIColor+MQ.swift in Sources */,
 				7A98DC9C1F56B1DB00F20CB0 /* Bundle+MQ.swift in Sources */,
 				7AB860001FE3B8670071B354 /* UIFont+MQ.swift in Sources */,
 				7AB85FF81FE3B39A0071B354 /* MQStructs.swift in Sources */,
 				7A9B24DB1F4E7F510022E199 /* FiveViewController.swift in Sources */,
+				7A5C06071FE76545009ED4A5 /* MQUtils.swift in Sources */,
 				7AB860021FE3C13C0071B354 /* UIDevice+MQ.swift in Sources */,
+				7A5C061F1FE78D74009ED4A5 /* MQNotification.swift in Sources */,
+				7A5C06011FE76545009ED4A5 /* HImagePickerUtils.swift in Sources */,
 				7A9B24F81F4EB8B20022E199 /* MQNavigationViewController.swift in Sources */,
 				7A9B24EA1F4E9D920022E199 /* MQTabbarConfig.swift in Sources */,
+				7A5C060E1FE7654E009ED4A5 /* MQAPIDataparse.swift in Sources */,
 				7A9B24CF1F4E7F210022E199 /* SecondViewController.swift in Sources */,
-				7A9B24F01F4E9EDD0022E199 /* MQTabBarViewController.swift in Sources */,
+				7A5C06041FE76545009ED4A5 /* MQCommonUtils.swift in Sources */,
+				7A5C060D1FE7654E009ED4A5 /* MQAPI.swift in Sources */,
+				7A5C064D1FE7B1F0009ED4A5 /* UITabbarController+MQ.swift in Sources */,
+				7A5C061C1FE78BD7009ED4A5 /* UIViewController+MQNavControl.swift in Sources */,
+				7A5C06061FE76545009ED4A5 /* MQLocationUtils.swift in Sources */,
 				7A9B24CB1F4E7F0F0022E199 /* FirstViewController.swift in Sources */,
+				7A5C06031FE76545009ED4A5 /* MQAudioUtils.swift in Sources */,
+				7A5C06491FE7A952009ED4A5 /* MQRouter.swift in Sources */,
+				7A5C06171FE785FB009ED4A5 /* MQConst.swift in Sources */,
+				7A5C06021FE76545009ED4A5 /* MQAlertUtils.swift in Sources */,
+				7A5C061B1FE78BD7009ED4A5 /* UIViewController+MQ.swift in Sources */,
+				7A5C06261FE79CF5009ED4A5 /* AppDelegate+Notice.swift in Sources */,
 				7A9B24D71F4E7F430022E199 /* FourViewController.swift in Sources */,
 				7A9B24EC1F4E9DA60022E199 /* MQTintColorConfig.swift in Sources */,
+				7A5C06141FE7685B009ED4A5 /* MQUserModel.swift in Sources */,
+				7A5C05F81FE7653D009ED4A5 /* MQNetwork.swift in Sources */,
+				7A5C06271FE79CF5009ED4A5 /* AppDelegate+BMap.swift in Sources */,
 				7A9B24E81F4E9D7F0022E199 /* MQNavBarConfig.swift in Sources */,
 				7AB85FFC1FE3B6C70071B354 /* String+MQ.swift in Sources */,
 				7A98DC9F1F56B21000F20CB0 /* NSObject+MQ.swift in Sources */,
 				7A9B24801F4E7B790022E199 /* AppDelegate.swift in Sources */,
 				7A9B24D31F4E7F330022E199 /* ThreeViewController.swift in Sources */,
+				7A5C06481FE7A952009ED4A5 /* MQRootController.swift in Sources */,
+				7A5C060F1FE7654E009ED4A5 /* MQAPISign.swift in Sources */,
+				7A5C06051FE76545009ED4A5 /* MQDateUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -806,24 +1153,48 @@
 		};
 		7A9B24A51F4E7B7A0022E199 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 278BC341C6DC2E131339EDF4 /* Pods-MQStructs_Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MQStructs_Swift/MQCommon/UM/UMMobClick-NO-IDFA",
+					"$(PROJECT_DIR)/MQStructs_Swift/MQCommon/BaiduMap",
+				);
 				INFOPLIST_FILE = MQStructs_Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MQStructs_Swift/MQCommon/UM/UMessage_Sdk_1.4.0",
+					"$(PROJECT_DIR)/MQStructs_Swift/MQCommon/BaiduMap/thirdlibs",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MQ.MQStructs-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MQStructs_Swift/MQStructs-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		7A9B24A61F4E7B7A0022E199 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCE01DF2B72B36B5DCEBBA3C /* Pods-MQStructs_Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MQStructs_Swift/MQCommon/UM/UMMobClick-NO-IDFA",
+					"$(PROJECT_DIR)/MQStructs_Swift/MQCommon/BaiduMap",
+				);
 				INFOPLIST_FILE = MQStructs_Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MQStructs_Swift/MQCommon/UM/UMessage_Sdk_1.4.0",
+					"$(PROJECT_DIR)/MQStructs_Swift/MQCommon/BaiduMap/thirdlibs",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MQ.MQStructs-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MQStructs_Swift/MQStructs-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;

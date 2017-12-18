@@ -7,21 +7,30 @@
 //
 
 import UIKit
+import MJRefresh
+import MJExtension
+import Kingfisher
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var isProcessed: Bool = true
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
-        
+        //
+        isProcessed = true
+        //
         MQStructs.loadUIConfig()
         
-        self.window?.rootViewController = MQTabBarViewController()
+        MQRootController.mqReload()
+        
+        MQRouter.changeRootViewController(MQRootController.mq_tabbarVC())
+        
+//        self.window?.rootViewController = MQTabBarViewController()
         self.window?.makeKeyAndVisible()
         return true
     }
@@ -49,5 +58,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+extension AppDelegate: UITabBarControllerDelegate {
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        return UITabBarController.mq_tabBarController(tabBarController, shouldSelectViewController: viewController)
+    }
 }
 

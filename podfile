@@ -1,0 +1,18 @@
+
+use_frameworks!
+
+target 'MQStructs_Swift' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for MQStructs
+  pod 'ZXAutoScrollView'
+  pod 'Kingfisher'
+  pod 'MJRefresh'
+  pod 'MJExtension'
+  pod 'MBProgressHUD'
+  pod 'JXPhotoBrowser'
+  pod 'KeychainAccess'
+  pod 'FMDB'
+  pod 'AnimatedCollectionViewLayout'
+end

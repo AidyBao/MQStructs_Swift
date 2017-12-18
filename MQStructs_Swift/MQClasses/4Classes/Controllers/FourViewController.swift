@@ -12,25 +12,14 @@ class FourViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: .add, target: self, action: #selector(dimiss))
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesBegan(touches, with: event)
-        self.dimiss()
-    }
-
-    
-    @objc func dimiss() {
-        self.dismiss(animated: true, completion: nil)
-    }
+        
 
     /*
     // MARK: - Navigation
